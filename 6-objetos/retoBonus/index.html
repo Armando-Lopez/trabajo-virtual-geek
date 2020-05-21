@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller-virtual-geel</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: hidden;
+            background-color: #ffcc00;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .face-container {
+            font-size: 3em;
+        }
+
+        select {
+            padding: .4em;
+            padding-right: 40px;
+            border-radius: 5px;
+            font-size: .4em;
+            font-weight: bold;
+        }
+
+        button {
+            padding: 10px;
+            font-size: .34em;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            background-color: #087fd3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="face-container">
+            <h1 class="face">:)</h1>
+            <select name="status" id="status">
+                <option value=":)">:)</option>
+                <option value=":(">:(</option>
+            </select>
+            <button class="update">Update</button>
+        </div>
+    </div>
+    <script>
+        const body = document.querySelector('body')
+        const status = document.getElementById('status');
+        const mouth = document.querySelector('.face');
+        const updatebtn = document.querySelector('.update');
+
+        updatebtn.addEventListener('click', () => {
+            let number = Math.round(Math.random() * 100);
+            if (number % 2 == 0) {
+                body.style.backgroundColor = '#ffcc00'
+            } else {
+                body.style.backgroundColor = '#ff9900'
+            }
+            console.log("number", number)
+            mouth.innerText = status.value;
+        })
+    </script>
+</body>
+
+</html>
