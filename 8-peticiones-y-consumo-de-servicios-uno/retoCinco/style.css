@@ -1,0 +1,25 @@
+.wrapper {
+    width: 90%;
+    margin: auto;
+}
+.breeds-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.breeds-list button {
+    width: auto;
+}
+.breeds-list__breed {
+    padding: 5px;
+    font-weight: bold;
+}
+
+.selected {
+    background-color: black;
+    color: white;
+}
+
+img {
+    width: 300px;
+}

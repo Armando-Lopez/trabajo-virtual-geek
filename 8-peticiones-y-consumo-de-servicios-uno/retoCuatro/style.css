@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 30px;
+    border: 1px solid seagreen;
+    box-shadow: 3px 3px 10px springgreen;
+}
+
+.search {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 1em;
+    background-color: springgreen;
+}
+
+.search__input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    outline-color: seagreen;
+}
+
+.search__button {
+    outline: none;
+    padding: 7px 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: seagreen;
+    cursor: pointer;
+}
+
+hr {
+    border-color: seagreen;
+}
+
+.org {
+    text-align: justify;
+}
+
+.org__name {
+    font-size: 1.3em;
+}
+
+.org__repositories {
+    font-size: 1.2em;
+    font-weight: bold;
+}
