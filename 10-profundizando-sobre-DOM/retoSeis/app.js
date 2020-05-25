@@ -34,8 +34,7 @@ createdParagraphs.forEach(paragraph => {
     // console.log(option);
 });
 
-
-//add events to each select
+//add events to each select and change paragraph color
 const selects = document.querySelectorAll('select');
 selects.forEach((select, index) => {
     select.addEventListener('change', (ev) => {
@@ -43,8 +42,3 @@ selects.forEach((select, index) => {
         createdParagraphs[index].style.color = colors[colorIndex];
     });
 });
-// console.log(selects);
-
-console.log(createdParagraphs[4]);
-
-
